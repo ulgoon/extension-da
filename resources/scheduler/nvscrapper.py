@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup as btfs
 
 
 def scrape():
+    results = {}
     url = "https://www.naver.com"
     response = requests.get(url).text
     soup = btfs(response, "html.parser")
@@ -11,5 +12,8 @@ def scrape():
     for li in all_li:
         rank = li.find('span', attrs={"class":"ah_r"}).text
         keyword = li.find('span', attrs={"class":"ah_k"}).text
-        print(rank, keyword)
-scrape()
+        results[rank] =  keyword
+    return print(results)
+
+if __name__ == "__main__":
+    scrape()
