@@ -1,4 +1,5 @@
 import requests
+import time
 from bs4 import BeautifulSoup as btfs
 
 
@@ -6,6 +7,10 @@ def scrape():
     results = {}
     url = "https://www.naver.com"
     response = requests.get(url).text
+    # get execution time
+    exec_time = time.ctime()
+    results["exec_time"] = exec_time
+
     soup = btfs(response, "html.parser")
     ul_tag = soup.find('ul', attrs={"class":"ah_l"})
     all_li = ul_tag.find_all('li')
