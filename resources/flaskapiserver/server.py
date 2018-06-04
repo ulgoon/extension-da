@@ -9,6 +9,11 @@ app = Flask(__name__)
 def index():
     return "hello"
 
+# route for api server
+@app.route('/api/v1/naver')
+def get_keyword():
+    return "keyword will shows here"
+
 # flask run with shell
 if __name__ == '__main__':
     app.run('0.0.0.0', port=8088)
