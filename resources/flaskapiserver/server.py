@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import json, Response
+from flask import render_template
 from pymongo import MongoClient
 from bson import json_util
 # requirement: flask($ pip install flask)
@@ -10,7 +11,8 @@ app = Flask(__name__)
 # route(ex> https://www.naver.com"/news" )
 @app.route('/')
 def index():
-    return "hello"
+    # render index.html with render_template()
+    return render_template('index.html')
 
 # route for api server
 # load data from mlab with pymongo
