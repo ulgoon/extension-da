@@ -2,7 +2,8 @@
 
 ## Curriculum
 
-### 2nd semester
+- Python Basic
+    - Introduce to Computer Science
 - git, github for data scientist
 - SQL(1)
     - sql with sqlite
@@ -26,3 +27,6 @@
     - execute_script
 - Web Scraping(3)
     - get API to scrap data
+- Cloud Service with AWS
+- Flask Web Framework
+- Mini Project
