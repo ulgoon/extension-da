@@ -34,7 +34,7 @@ footer : fastcampus 데이터 사이언스 Extension 스쿨, Wooyoung Choi, 2018
 ---
 ## Before Linux
 
-![](https://upload.wikimedia.org/wikipedia/commons/3/36/Ken_n_dennis.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Ken_Thompson_and_Dennis_Ritchie.jpg/270px-Ken_Thompson_and_Dennis_Ritchie.jpg)
 - 1973년 데니스 리치와 켄 톰슨이 C를 개발한 뒤, C 기반 UNIX 재작성
 
 ---
