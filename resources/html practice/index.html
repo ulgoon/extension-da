@@ -1,0 +1,72 @@
+<!doctype html> <!-- HTML 문서의 시작 -->
+<html> <!-- 모든 문서는 html로 시작해 끝납니다 -->
+ <head> <!-- 문서를 정의하기 위한 head -->
+  <meta charset="utf-8">
+  <title>My First HTML Page</title>
+  <!-- CSS Styling을 위한 style -->
+  <style> 
+      #footer {
+          background-color:black;
+      }
+
+      .main-menu {
+          background-color: yellow;
+      }
+  </style>
+ </head>
+ <body> <!-- 사용자에게 보여질 영역을 정의하기 위한 body -->
+
+    <!-- semantic element: header -->
+  <header id="top" class="main-menu nav"> <!-- id:문서 내의 unique한 이름, class:스타일 서식 사용을 위한 설정 로드 -->
+   <nav>
+    <ul>
+     <li id="awesome">
+      <a href="https://www.google.com/">Google</a>
+     </li>
+     <li>
+      <a href="/">Home</a>
+     </li>
+     <li>
+      <a href="#footer">Go to Footer</a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <article>
+   <section>
+     <h1 class="main-menu">Home</h1>
+     <p style="font-size:25px;">안녕하세요 패스트캠퍼스입니다. 
+      <br>
+      꼭 저를 따라하지 않으셔도 됩니다. 
+      이렇게 써도 저를 따라하시겠죠.
+      하지만, 저는 괜찮습니다.
+     </p>
+     <div>
+        이렇게하면 표준을 벗어나는 
+        아주 웹 스크래퍼를 괴롭히는 텍스트입니다.
+     </div>
+     </section>
+     <section>
+        <a href="https://www.google.com/" target="_blank">
+            어떤 링크 텍스트
+        </a>
+        <img src="https://images.pexels.com/photos/383568/pexels-photo-383568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="640">
+        <img src="./sky.jpg" width="500">
+    </section>
+   </article>
+   <footer id="footer">
+    <h3>This is Footer</h3>
+    <h3><a href="#top">Go to TOP</a></h3>
+   </footer>
+</body>
+</html>
+
+<!--
+
+* CSS Selector를 이용해 naver 실시간 검색어 순위 요소 접근하기
+#PM_ID_ct > div.header > div.section_navbar > div.area_hotkeyword.PM_CL_realtimeKeyword_base > div.ah_roll.PM_CL_realtimeKeyword_rolling_base > div > ul
+
+* XPath 검색어를 이용해 naver 실시간 검색어 순위 요소 접근하기
+//*[@id="PM_ID_ct"]/div[1]/div[2]/div[2]/div[1]/div/ul
+
+-->
